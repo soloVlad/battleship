@@ -50,10 +50,20 @@ module.exports = {
       'objects': 'always-multiline',
       'imports': 'always-multiline',
       'exports': 'always-multiline',
+      'enums': 'always-multiline',
       'functions': 'never',
     }],
     '@typescript-eslint/naming-convention': 'warn',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/member-delimiter-style': ['error', {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+    }],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   },
   "ignorePatterns": [
     ".eslintrc.cjs",
