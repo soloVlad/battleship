@@ -25,7 +25,6 @@ wsServer.on('connection', (ws) => {
       }
 
       console.log(`Received message: ${JSON.stringify(messageObj)}`);
-      console.log(messageObj);
     } catch (error) {
       console.log(error);
     }
